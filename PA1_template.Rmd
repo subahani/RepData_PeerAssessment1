@@ -1,7 +1,6 @@
 Reproducible Research: Peer Assessment 1
 ========================================
-Fabian Linzberger
-
+Fabian Linzberger - https://github.com/lefant/RepData_PeerAssessment1
 
 ## Loading and preprocessing the data
 ```{r}
