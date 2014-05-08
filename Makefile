@@ -9,4 +9,4 @@ $(RMDFILE).html: $(RMDFILE).md
 	Rscript -e "require(markdown); markdownToHTML('$(RMDFILE).md', '$(RMDFILE).html', options=c('use_xhtml', 'base64_images'))"
 
 $(RMDFILE).md: $(RMDFILE).Rmd
-	Rscript -e "require(knitr); require(markdown); knit('$(RMDFILE).rmd', '$(RMDFILE).md')"
+	Rscript -e "require(knitr); require(markdown); knit('$(RMDFILE).Rmd', '$(RMDFILE).md')"
