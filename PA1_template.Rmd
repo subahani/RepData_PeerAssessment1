@@ -14,9 +14,7 @@ activity <- read.csv("activity.csv")
 
 ```{r}
 steps.date <- aggregate(steps ~ date, data = activity, FUN=sum)
-steps <- steps.date$steps
-names(steps) <- steps.date$date
-barplot(steps, xlab="date", ylab="steps")
+barplot(steps.date$steps, names.arg=steps.date$date, xlab="date", ylab="steps")
 ```
 
 2. Calculate and report the **mean** and **median** total number of
