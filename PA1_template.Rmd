@@ -11,7 +11,12 @@ activity <- read.csv("activity.csv")
 
 
 ## What is mean total number of steps taken per day?
-
+```{r}
+tsteps <- tapply(activity$steps, activity$date, sum)
+barplot(tsteps, xlab="days", ylab="steps")
+mean(tsteps, na.rm=TRUE)
+median(tsteps, na.rm=TRUE)
+```
 
 
 ## What is the average daily activity pattern?
