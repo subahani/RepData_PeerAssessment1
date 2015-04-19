@@ -10,3 +10,4 @@ $(RMDFILE).html: $(RMDFILE).md
 
 $(RMDFILE).md: $(RMDFILE).Rmd
 	Rscript -e "require(knitr); require(markdown); knit('$(RMDFILE).Rmd', '$(RMDFILE).md')"
+
