@@ -124,3 +124,6 @@ for (type in c("weekend", "weekday")) {
     plot(steps.type, type="l", main=type)
 }
 ```
+
+
+
